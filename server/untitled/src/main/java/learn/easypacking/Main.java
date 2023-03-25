@@ -1,4 +1,4 @@
-package org.example;
+package learn.easypacking;
 
 public class Main {
     public static void main(String[] args) {
