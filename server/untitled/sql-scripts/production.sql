@@ -39,8 +39,8 @@ create table `event` (
 	event_id int primary key auto_increment,
     event_name varchar(50),
     event_type bit,
-    start_date date,
-    end_date date,
+    start_date varchar(50),
+    end_date varchar(50), 
     app_user_id int not null,
     start_location_id int not null,
     end_location_id int not null,
@@ -55,9 +55,9 @@ create table `event` (
         references location(location_id)
 );
 
-create table todo_list(
+create table todo(
 	todo_id int primary key auto_increment,
-    todo_date datetime,
+    todo_date varchar(50),
     todo_name varchar(50),
     todo_description varchar(255),
     todo_status bit,

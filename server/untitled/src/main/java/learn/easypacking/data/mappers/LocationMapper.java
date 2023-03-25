@@ -8,13 +8,13 @@ import java.sql.SQLException;
 
 public class LocationMapper implements RowMapper<Location> {
     @Override
-    public Location mapRow(ResultSet resultSet, int i) throws SQLException {
+    public Location mapRow(ResultSet rs, int i) throws SQLException {
         Location location = new Location();
-        location.setLocationId(resultSet.getInt("location_id"));
-        location.setStreetAddress(resultSet.getString("street_address"));
-        location.setCity(resultSet.getString("city"));
-        location.setZip(resultSet.getInt("zip"));
-        location.setState(resultSet.getString("state"));
+        location.setLocationId(rs.getInt("location_id"));
+        location.setStreetAddress(rs.getString("street_address"));
+        location.setCity(rs.getString("city"));
+        location.setZip(rs.getInt("zip"));
+        location.setState(rs.getString("state"));
         return location;
     }
 }
