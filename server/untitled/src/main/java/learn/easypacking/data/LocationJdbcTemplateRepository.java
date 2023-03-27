@@ -22,7 +22,7 @@ public class LocationJdbcTemplateRepository implements LocationRepository{
 
     @Override
     public Location findById(int locationId) {
-        String sqlStatement = "Select location_id, street_address, city, zip, state from location where location_id =?; ";
+        String sqlStatement = "Select * from location where location_id =?; ";
         return jdbcTemplate.query(sqlStatement, new LocationMapper(), locationId).stream()
                 .findFirst()
                 .orElse(null);

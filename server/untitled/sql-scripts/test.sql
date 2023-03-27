@@ -39,8 +39,8 @@ create table `event` (
 	event_id int primary key auto_increment,
     event_name varchar(50),
     event_type bit,
-    start_date date,
-    end_date date,
+    start_date varchar(50),
+    end_date varchar(50), 
     app_user_id int not null,
     start_location_id int not null,
     end_location_id int not null,
@@ -55,9 +55,9 @@ create table `event` (
         references location(location_id)
 );
 
-create table todo_list(
+create table todo(
 	todo_id int primary key auto_increment,
-    todo_date datetime,
+    todo_date varchar(50),
     todo_name varchar(50),
     todo_description varchar(255),
     todo_status bit,
@@ -92,13 +92,13 @@ create table item(
 		foreign key (container_id)
         references container(container_id)
 );
-
+    
 delimiter //
 create procedure set_known_good_state()
 begin
-
-    delete from todo_list;
-    alter table todo_list auto_increment = 1;
+	
+    delete from todo;
+    alter table todo auto_increment = 1;
     delete from item;
 	alter table item auto_increment = 1;
     delete from container;
@@ -113,8 +113,8 @@ begin
 	alter table app_role auto_increment = 1;
     delete from app_user;
 	alter table app_user auto_increment = 1;
-
-
+    
+    
     insert into app_role (`name`) values
 		('USER'),
 		('ADMIN');
@@ -129,28 +129,28 @@ begin
 		values
 		(1, 1),
 		(2, 1);
-
+        
 	insert into location (street_address, city, zip, state) values
 		('123 Lexington ave', 'Manhattan', 10023, 'NY'),
         ('456 Fulton st', 'Dallas', 13456, 'TX'),
         ('789 Strawberry rd', 'Santa Monica', 17261, 'CA');
-
+        
 	insert into `event` (event_name, event_type, start_date, end_date, app_user_id, start_location_id, end_location_id) values
 		('Springbreak', 1, '2022-04-15', '2022-04-30', 1, 1, 3),
 		('First House', 0, '2023-02-01', '2023-02-01', 2, 2, 1);
-
+    
 	insert into container (parent_container_id, container_name, event_id) values
 		(null, 'Kitchen', 2),
         (1, 'Silverware', 2),
         (null, 'Blue Luggage', 1),
-        (3, 'Shoe bag', 1);
-
+        (3, 'Shoe bag', 1); 
+    
 	insert into item (item_name, pack_status, quantity, `description`, app_user_id, container_id) values
 		('Spoon', 0, 400, 'Wish I had more spoons', 2, 2),
         ('Fork', 1, 1, 'My favorite fork', 2, 2),
         ('Shoes', 1, 3, 'Nike runners, Brown dress shoes, Black boots', 1, 4);
-
-    insert into todo_list (todo_date, todo_name, todo_description, todo_status, event_id) values
+    
+    insert into todo (todo_date, todo_name, todo_description, todo_status, event_id) values
 		('2022-04-16', 'Beach Day', 'go to the beach at 12pm', 0, 1),
         ('2022-04-17', 'Sightseeing', 'Head to townsquare to begin tour', 0, 1),
         ('2023-02-01', 'Unload truck', 'Place all boxes in their assigned rooms', 1, 2);
