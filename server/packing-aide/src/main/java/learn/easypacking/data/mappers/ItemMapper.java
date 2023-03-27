@@ -18,6 +18,5 @@ public class ItemMapper implements RowMapper<Item> {
         item.setUserId(resultSet.getInt("user_id"));
         item.setContainerId(resultSet.getInt("container_id"));
         return item;
-
     }
 }
