@@ -3,6 +3,28 @@ package learn.easypacking.models;
 public class Item {
     private int itemId;
 
+
+    private String itemName;
+
+    private boolean packStatus;
+
+    private int quantity;
+
+    private String description;
+
+    private int userId;
+
+    private int containerId;
+
+    public Item(int itemId, String itemName, boolean packStatus, String description, int userId, int containerId) {
+        this.itemId = itemId;
+        this.itemName = itemName;
+        this.packStatus = packStatus;
+        this.description = description;
+        this.userId = userId;
+        this.containerId = containerId;
+    }
+
     public int getItemId() {
         return itemId;
     }
@@ -59,15 +81,4 @@ public class Item {
         this.containerId = containerId;
     }
 
-    private String itemName;
-
-    private boolean packStatus;
-
-    private int quantity;
-
-    private String description;
-
-    private int userId;
-
-    private int containerId;
 }

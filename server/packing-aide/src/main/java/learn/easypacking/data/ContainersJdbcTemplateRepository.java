@@ -35,7 +35,7 @@ public class ContainersJdbcTemplateRepository implements ContainersRepository{
 
     }
 
-    public Container add(Container container) {
+    public Container createContainer (Container container) {
         final String sql = "insert into container (parent_container_id, container_name, event_id) "
                 + " values (?,?,?);";
 
@@ -55,7 +55,7 @@ public class ContainersJdbcTemplateRepository implements ContainersRepository{
         return container;
     }
 
-    public boolean update(Container container) {
+    public boolean updateContainer (Container container) {
         final String sql = "update container set "
                 + "parent_container_id = ?, "
                 + "container_name = ?, "

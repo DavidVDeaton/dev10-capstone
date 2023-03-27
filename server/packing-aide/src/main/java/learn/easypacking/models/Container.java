@@ -1,7 +1,27 @@
 package learn.easypacking.models;
 
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Container {
     private int containerId;
+
+    private int parentContainerId;
+
+    private String containerName;
+
+    private int eventId;
+
+    private List<Item> items = new ArrayList<>();
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
 
     public int getContainerId() {
         return containerId;
@@ -34,12 +54,6 @@ public class Container {
     public void setEventId(int eventId) {
         this.eventId = eventId;
     }
-
-    private int parentContainerId;
-
-    private String containerName;
-
-    private int eventId;
 
 
 }

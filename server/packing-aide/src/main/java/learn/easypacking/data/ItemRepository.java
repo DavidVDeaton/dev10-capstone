@@ -9,11 +9,11 @@ public interface ItemRepository {
 
     List<Item> findAll();
 
-    Item findById(int itemId);
+    List<Item> findByContainerId(int containerId);
 
-    Item add (Item item);
+    Item createItem (Item item);
 
-    boolean update(Item item);
+    boolean updateItem (Item item);
 
     boolean deleteById(int itemId);
 }
