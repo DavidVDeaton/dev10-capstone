@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07b88064-afd3-4f3c-8cfb-92d12fbfc67a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql-scripts/production.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql-scripts/test.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/data/LocationJdbcTemplateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/data/LocationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/data/ToDoJdbcTemplateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/data/ToDoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/data/mappers/LocationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/data/mappers/ToDoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/domain/LocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/domain/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/domain/ResultType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/domain/ToDoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/models/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/easypacking/models/ToDo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/easypacking/data/LocationJdbcTemplateRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/easypacking/data/ToDoJdbcTemplateRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/easypacking/domain/LocationServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/easypacking/domain/ToDoServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/data/LocationJdbcTemplateRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/data/LocationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/data/ToDoJdbcTemplateRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/data/ToDoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/data/mappers/LocationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/data/mappers/ToDoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/domain/LocationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/domain/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/domain/ResultType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/domain/ToDoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/models/Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learn/easypacking/models/ToDo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/learn/easypacking/data/LocationJdbcTemplateRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/learn/easypacking/data/ToDoJdbcTemplateRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/learn/easypacking/domain/LocationServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/learn/easypacking/domain/ToDoServiceTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2NZwq6ZHofhRINnY3rtp1mzlqxA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="All in untitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in untitled" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07b88064-afd3-4f3c-8cfb-92d12fbfc67a" name="Changes" comment="" />
+      <created>1679885100657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679885100657</updated>
+    </task>
+    <servers />
+  </component>
+</project>
