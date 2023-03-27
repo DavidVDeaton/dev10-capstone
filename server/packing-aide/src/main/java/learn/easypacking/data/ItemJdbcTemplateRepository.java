@@ -24,16 +24,13 @@ public class ItemJdbcTemplateRepository implements ItemRepository{
         return jdbcTemplate.query(sql, new ItemMapper());
     }
 
-    public Item findById(int itemId) {
-        final String sql = "select item_id, item_name, pack_status, quantity, description, user_id, container_id "
-                + "from item "
-                + "where item_id = ?;" ;
+    public List<Item> findByContainerId(int containerId) {
+        final String sql = "SELECT * from item where container_id = ?;";
 
-        return jdbcTemplate.query(sql, new ItemMapper(), itemId).stream()
-             .findFirst().orElse(null);
+        return jdbcTemplate.query(sql, new ItemMapper(), containerId);
     }
 
-    public Item add (Item item) {
+    public Item createItem (Item item) {
         final String sql = "insert into location (item_name, pack_status, quantity, description, user_id, container_id)"
                 + "values (?,?,?,?,?,?);" ;
 
@@ -57,7 +54,7 @@ public class ItemJdbcTemplateRepository implements ItemRepository{
         return item;
     }
 
-    public boolean update(Item item) {
+    public boolean updateItem (Item item) {
         final String sql = "update item set "
                 + "item_name = ?, "
                 + "pack_status = ?, "

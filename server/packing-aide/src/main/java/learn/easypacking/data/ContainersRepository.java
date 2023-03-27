@@ -9,9 +9,9 @@ public interface ContainersRepository {
 
     Container findById (int containerId);
 
-    Container add(Container container);
+    Container createContainer (Container container);
 
-    boolean update(Container container);
+    boolean updateContainer (Container container);
 
     boolean deleteById(int containerId);
 }
