@@ -3,6 +3,7 @@ package learn.easypacking.models;
 public class Item {
     private int itemId;
 
+
     private String itemName;
 
     private boolean packStatus;
@@ -79,6 +80,5 @@ public class Item {
     public void setContainerId(int containerId) {
         this.containerId = containerId;
     }
-
 
 }
