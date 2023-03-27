@@ -1,6 +1,5 @@
 package learn.easypacking.data;
 
-import learn.easypacking.models.Container;
 import learn.easypacking.models.Item;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
