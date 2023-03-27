@@ -58,7 +58,10 @@ public class ToDoJdbcTemplateRepository implements ToDoRepository {
                 "todo_description = ?, " +
                 "todo_status = ?, " +
                 "event_id = ? where todo_id = ?;";
-        return jdbcTemplate.update(sqlStatement, toDo.getToDoDate(), toDo.getToDoName(), toDo.getToDoDescription(), toDo.getToDoStatus(), toDo.getEventId(), toDo.getToDoId()) > 0;
+        return jdbcTemplate.update(sqlStatement,
+                toDo.getToDoDate(), toDo.getToDoName(),
+                toDo.getToDoDescription(), toDo.getToDoStatus(),
+                toDo.getEventId(), toDo.getToDoId()) > 0;
     }
 
     @Override

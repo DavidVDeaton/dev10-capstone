@@ -22,7 +22,7 @@ public class ToDoService {
         }
 
         if(toDo.getToDoId() != 0){
-            result.setMessages("EventId cannot be set before the createToDo operation", ResultType.INVALID);
+            result.setMessages("To Do Id cannot be set before the createToDo operation", ResultType.INVALID);
             return result;
         }
         toDo = repository.createToDo(toDo);

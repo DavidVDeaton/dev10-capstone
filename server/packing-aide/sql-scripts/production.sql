@@ -32,7 +32,8 @@ create table location (
     street_address varchar(255),
     city varchar(50),
     zip varchar(20),
-    state varchar(2)
+    state varchar(2),
+    country varchar(50)
 );
 
 create table `event` (

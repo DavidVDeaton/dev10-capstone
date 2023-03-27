@@ -9,6 +9,8 @@ public class Location {
     private int zip;
     private String state;
 
+    private String country;
+
     public int getLocationId() {
         return locationId;
     }
@@ -47,5 +49,13 @@ public class Location {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }
