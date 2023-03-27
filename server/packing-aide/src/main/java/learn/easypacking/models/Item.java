@@ -16,10 +16,11 @@ public class Item {
 
     private int containerId;
 
-    public Item(int itemId, String itemName, boolean packStatus, String description, int userId, int containerId) {
+    public Item(int itemId, String itemName, boolean packStatus, int quantity, String description, int userId, int containerId) {
         this.itemId = itemId;
         this.itemName = itemName;
         this.packStatus = packStatus;
+        this.quantity = quantity;
         this.description = description;
         this.userId = userId;
         this.containerId = containerId;
