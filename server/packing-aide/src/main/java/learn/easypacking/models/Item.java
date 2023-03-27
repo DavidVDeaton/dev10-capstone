@@ -25,6 +25,10 @@ public class Item {
         this.containerId = containerId;
     }
 
+    public Item() {
+
+    }
+
     public int getItemId() {
         return itemId;
     }

@@ -49,7 +49,7 @@ class ContainersJdbcTemplateRepositoryTest {
     @Test
     void add() {
         Container containerToAdd = createContainer();
-        Container actual = repository.add(containerToAdd);
+        Container actual = repository.createContainer(containerToAdd);
         assertNotNull(actual);
         assertEquals(5, actual.getContainerId());
     }
@@ -61,7 +61,7 @@ class ContainersJdbcTemplateRepositoryTest {
         containerToUpdate.setContainerName("updated test");
         containerToUpdate.setEventId(2);
 
-        assertTrue(repository.update(containerToUpdate));
+        assertTrue(repository.updateContainer(containerToUpdate));
         assertEquals("updated test", repository.findById(2).getContainerName());
     }
 
@@ -72,7 +72,7 @@ class ContainersJdbcTemplateRepositoryTest {
         containerToUpdate.setContainerName("updated test");
         containerToUpdate.setEventId(2);
 
-        assertFalse(repository.update(containerToUpdate));
+        assertFalse(repository.updateContainer(containerToUpdate));
     }
 
 

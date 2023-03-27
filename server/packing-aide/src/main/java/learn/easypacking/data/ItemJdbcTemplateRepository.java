@@ -5,11 +5,12 @@ import learn.easypacking.models.Item;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.List;
-
+@Repository
 public class ItemJdbcTemplateRepository implements ItemRepository{
 
     private final JdbcTemplate jdbcTemplate;
@@ -18,18 +19,21 @@ public class ItemJdbcTemplateRepository implements ItemRepository{
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    @Override
     public List<Item> findAll() {
         final String sql = "select item_id, item_name, pack_status, quantity, description, user_id, container_id "
                 + "from item;";
         return jdbcTemplate.query(sql, new ItemMapper());
     }
 
+    @Override
     public List<Item> findByContainerId(int containerId) {
         final String sql = "SELECT * from item where container_id = ?;";
 
         return jdbcTemplate.query(sql, new ItemMapper(), containerId);
     }
 
+    @Override
     public Item createItem (Item item) {
         final String sql = "insert into location (item_name, pack_status, quantity, description, user_id, container_id)"
                 + "values (?,?,?,?,?,?);" ;
@@ -54,6 +58,7 @@ public class ItemJdbcTemplateRepository implements ItemRepository{
         return item;
     }
 
+    @Override
     public boolean updateItem (Item item) {
         final String sql = "update item set "
                 + "item_name = ?, "
@@ -74,6 +79,7 @@ public class ItemJdbcTemplateRepository implements ItemRepository{
                 item.getItemId()) > 0;
     }
 
+    @Override
     public boolean deleteById(int itemId) {
         return jdbcTemplate.update(
                 "delete from location where item_id = ?", itemId
